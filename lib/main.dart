@@ -2,8 +2,10 @@ import 'package:demo_sales_app/core/utils/colors.dart';
 import 'package:demo_sales_app/core/utils/navigation.dart';
 import 'package:demo_sales_app/core/utils/pref_helper.dart';
 import 'package:demo_sales_app/module/view/auth/login/login_screen.dart';
+import 'package:demo_sales_app/module/view/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() async {
@@ -31,7 +33,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Sales Force',
       navigatorKey: Navigation.key,
       debugShowCheckedModeBanner: false,
@@ -47,7 +49,7 @@ class MyApp extends StatelessWidget {
         ),
         primarySwatch: primarySwatchColor,
       ),
-      home: const LoginScreen(),
+      home: const SplashScreen(),
     );
   }
 }

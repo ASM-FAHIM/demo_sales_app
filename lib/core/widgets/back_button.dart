@@ -19,7 +19,7 @@ class BackButtonWidget extends StatelessWidget {
             width: 25,
             height: 25,
             child: CommonIconWidget(
-              backBtnImagePath,
+              'backBtnImagePath',
               width: 24,
               height: 24,
               color: blackColor,
